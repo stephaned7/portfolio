@@ -1,0 +1,74 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-weight: bold;
+}
+body #app nav {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+body #app nav .container-fluid .navbar-brand {
+  font-family: "kaushan script", sans-serif;
+  color: white;
+}
+body #app nav .container-fluid ul {
+  margin-left: 5%;
+}
+body #app nav .container-fluid ul .nav-link {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+body #app .headBanner {
+  position: relative;
+  border-bottom: 2px solid black;
+}
+body #app .headBanner .imgContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+body #app .headBanner .imgContent .banner-text {
+  font-family: "kaushan script", sans-serif;
+  font-size: 4rem;
+}
+body #app .aboutMe .customBorder {
+  border: 4px solid black;
+  box-shadow: 3px 3px 3px #515151;
+}
+
+@media (min-width: 992px) {
+  .banner-text {
+    font-size: 4rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .banner-text {
+    font-size: 4rem !important;
+  }
+}
+@media (max-width: 576px) {
+  .banner-text {
+    font-size: 2.5rem !important;
+  }
+}/*# sourceMappingURL=style.css.map */

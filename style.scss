@@ -1,0 +1,89 @@
+$kaushan: "kaushan script", sans-serif;
+
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+  #app {
+    nav {
+      z-index: 1000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      .container-fluid {
+        .navbar-brand {
+          font-family: $kaushan;
+          color: white;
+        }
+        ul {
+          margin-left: 5%;
+
+          .nav-link {
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    .headBanner {
+      position: relative;
+      border-bottom: 2px solid black;
+
+      .imgContent {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        .banner-text {
+          font-family: $kaushan;
+          font-size: 4rem;
+        }
+      }
+    }
+
+  .aboutMe{
+    .customBorder{
+      border: 4px solid black;
+      box-shadow: 3px 3px 3px #515151;
+    }
+  }
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-text {
+    font-size: 4rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-text {
+    font-size: 4rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-text {
+    font-size: 2.5rem !important;
+  }
+}
